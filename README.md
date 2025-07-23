@@ -27,3 +27,7 @@ It’s clean, responsive, and designed to demonstrate foundational frontend skil
 - HTML  
 - CSS  
 - JavaScript (Vanilla)
+  
+## Output
+
+https://github.com/user-attachments/assets/05b860de-314a-4f3f-a414-0d8a02e5b66b
