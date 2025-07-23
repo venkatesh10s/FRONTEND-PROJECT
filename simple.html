@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .Main{
+            width: 100vw;
+            height: 100vh;
+            background-color: rgb(3, 3, 80);
+            position: relative;
+        }
+        .Margin{
+            margin: 0px;
+        }
+        .Sub1{
+            width: 50vw;
+            height: 100vh;
+            background-color: lightgray;
+            position: absolute;
+            top: 0vh;
+            left: 0vw;
+        }
+        .Sub2{
+            width: 50vw;
+            height: 50vh;
+            position: absolute;
+            top: 25vh;
+            font-size: medium;
+            color: rgb(3, 3, 80);
+            text-align: center;
+        }
+        .Sub3{
+            width: 25vw;
+            height: 60vh;
+            position: absolute;
+            top: 20vh;
+            left: 63vw;
+        }
+        .Sub3 img{
+            width: 25vw;
+            height: 60vh;
+            background-color: brown;
+            position: absolute;
+            top: 0vh;
+            left: 0vw;
+            border:white 2px solid;
+            border-radius: 50%;
+        }
+        .Sub2 button{
+            width: 15vw;
+            height: 10vh;
+            background-color: rgb(3, 3, 80);
+            color: white;
+            border: 2px white solid;
+            border-radius: 10px;
+            font-size: medium;
+        }
+        .Sub4{
+            width: 40vw;
+            height: 50vh;
+            position: absolute;
+            top: 25vh;
+            left: 55vw;
+            display: flex;
+            display: none;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .Sub4 img{
+            width: 30vw;
+            height: 25vh;
+            position: absolute;
+            bottom: 15vh;
+            left: 7vw;
+            
+        }
+    </style>
+</head>
+<body class="Margin">
+    <div class="Main">
+        <div class="Sub1"></div>
+            <div class="Sub2">
+                <h1>Venkatesh S</h1>
+                <h1>Mern Stack Learner</h1>
+                <p>I am an enthusiastic MERN Stack learner passionate about building dynamic and responsive web applications. I’m currently mastering MongoDB, Express.js, React.js, and Node.js to develop full-stack solutions that solve real-world problems. With a solid foundation in front-end and back-end technologies, I aim to become a proficient developer capable of handling complete web development workflows—from database design to frontend interfaces.</p>
+                <button id="button">Explore</button>
+            </div>
+            <div class="Sub3">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEbWUj6Umy6qg7GsmYYjdzSPuJowP_Ap1YYQ&s" alt="">
+            </div>
+            <div class="Sub4" id="Box4">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/9/94/MERN-logo.png" alt="">
+            </div>
+    </div>
+</body>
+<script>
+    document.getElementById("button").onclick = function(){
+        document.getElementById("Box4").style.display = "block"
+        document.getElementsByClassName("Sub3")[0].style.display = "none"
+    }
+</script>
+</html>
